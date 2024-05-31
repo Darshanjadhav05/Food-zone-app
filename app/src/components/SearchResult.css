@@ -1,0 +1,68 @@
+.foodcontainer {
+    background-image: url("../../public/bg.png");
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .foodcards {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 47%); /* Semi-transparent white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+    padding: 20px;
+    width: 332px;
+    display: flex;
+   
+
+  }
+  
+  .food_img img {
+    width: 120px; /* Adjust as needed */
+    height: 120px; /* Adjust as needed */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Cover the entire area */
+  }
+  
+  .food_info {
+    flex-grow: 1; /* Expand to fill remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: end;
+  }
+  
+  .info h3 {
+    margin: 0; /* Remove default margin */
+  }
+  
+  .info p {
+    margin: 5px 0; /* Add some space between elements */
+  }
+  
+  button {
+    padding: 10px 20px; /* Increase padding for better visibility */
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+    width: 90px;
+    
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end; /* Align button to the right */
+  }
+  
+  /* Media Query for smaller screens */
+  @media screen and (max-width: 600px) {
+    .foodcards {
+      width: 100%; /* Cards take up full width on smaller screens */
+    }
+  }
+  
